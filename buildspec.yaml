@@ -3,8 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
+      - npm cache clean --force
       - echo installing nodejs...
-      - curl -sL https://deb.nodesource.com/setup_18.x | bash -
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
       - apt-get install -y nodejs  #aws code build use ubuntu environement
   pre_build:
     commands:
