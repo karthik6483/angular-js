@@ -15,7 +15,7 @@ phases:
     commands:
       # - echo testing...
       # - echo building...
-      - apt install ng-common
+      - apt-get install ng-common
       - ng build --prod
   post_build:
     commands:
