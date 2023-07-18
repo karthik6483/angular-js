@@ -17,10 +17,9 @@ phases:
       # - echo building...
   post_build:
     commands:
-      - mv appspec.yml ./dist/my-dream-app
-      - mv scripts ./dist/my-dream-app
+  
 artifacts:
   files:
     - "**/*"
-  discard-paths: no
-  base-directory: dist/my-dream-app
+  discard-paths: 
+  base-directory: 
